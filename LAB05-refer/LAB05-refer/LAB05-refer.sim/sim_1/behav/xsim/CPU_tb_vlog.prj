@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../LAB05-refer.srcs/sources_1/new/TOP.v" \
+"../../../../LAB05-refer.srcs/sources_1/new/ZeroExt.v" \
+"../../../../LAB05-refer.srcs/sources_1/new/instrMem.v" \
+"../../../../LAB05-refer.srcs/sources_1/new/PC.v" \
+"../../../../LAB05-refer.srcs/sources_1/new/Ext.v" \
+"../../../../LAB05-refer.srcs/sources_1/imports/new/DataMemory.v" \
+"../../../../LAB05-refer.srcs/sources_1/imports/new/Registers.v" \
+"../../../../LAB05-refer.srcs/sources_1/imports/new/Ctr.v" \
+"../../../../LAB05-refer.srcs/sources_1/imports/new/ALUctr.v" \
+"../../../../LAB05-refer.srcs/sources_1/imports/new/SignExt.v" \
+"../../../../LAB05-refer.srcs/sources_1/imports/new/ALU.v" \
+"../../../../LAB05-refer.srcs/sources_1/new/PCupdate.v" \
+"../../../../../../lab2/lab02/lab2_IP/lab2_IP/display.v" \
+"../../../../LAB05-refer.srcs/sim_1/new/CPU_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

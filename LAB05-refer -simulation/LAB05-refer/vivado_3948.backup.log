@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May 14 22:23:56 2024
+# Process ID: 3948
+# Current directory: D:/当代大学牲实录/起尸的大二下/系统结构实验/lab5/LAB05-refer/LAB05-refer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20612 D:\当代大学牲实录\起尸的大二下\系统结构实验\lab5\LAB05-refer\LAB05-refer\LAB05-refer.xpr
+# Log file: D:/当代大学牲实录/起尸的大二下/系统结构实验/lab5/LAB05-refer/LAB05-refer/vivado.log
+# Journal file: D:/当代大学牲实录/起尸的大二下/系统结构实验/lab5/LAB05-refer/LAB05-refer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/当代大学牲实录/起尸的大二下/系统结构实验/lab5/LAB05-refer/LAB05-refer/LAB05-refer.xpr
+INFO: [Project 1-313] Project file moved from 'E:/LAB05-refer' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Vivado/Vivado/2018.3/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 22:25:09 2024...

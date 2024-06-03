@@ -1,0 +1,382 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  8 08:52:32 2024
+# Process ID: 25308
+# Current directory: D:/LAB/lab3/lab03
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20316 D:\LAB\lab3\lab03\lab03.xpr
+# Log file: D:/LAB/lab3/lab03/vivado.log
+# Journal file: D:/LAB/lab3/lab03\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LAB/lab3/lab03/lab03.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Vivado/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir D:/LAB/lab3/lab03/lab03.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v w ]
+add_files -fileset sim_1 D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Ctr' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Ctr_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr
+ERROR: [VRFC 10-1280] procedural assignment to a non-register regDst is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:41]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register aluSrc is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:42]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register memToReg is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:43]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register regWrite is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:44]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register memRead is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:45]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register memWrite is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:46]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register branch is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:47]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register aluOp is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:48]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register jump is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:49]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register regDst is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:53]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register aluSrc is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:54]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register memToReg is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:55]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register regWrite is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:56]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register memRead is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:57]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register memWrite is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:58]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register branch is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:59]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register aluOp is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:60]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register jump is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:61]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register regDst is not permitted, left-hand side should be reg/integer/time/genvar [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:65]
+INFO: [#UNDEF] Sorry, too many errors..
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Ctr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Ctr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'opCode' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:35]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'regDst' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:36]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluSrc' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:37]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'memToReg' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:38]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'regWrite' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:39]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'memRead' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:40]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'memWrite' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:41]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'branch' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:42]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluOp' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:43]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'jump' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:44]
+ERROR: [VRFC 10-3594] non-net port 'opCode' cannot be of mode input [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:24]
+ERROR: [VRFC 10-2865] module 'Ctr' ignored due to previous errors [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v:23]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Ctr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Ctr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Ctr_tb_behav xil_defaultlib.Ctr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'RegDst' is not permitted [D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v:39]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'AluSrc' is not permitted [D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v:40]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'MemToReg' is not permitted [D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v:41]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'RegWrite' is not permitted [D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v:42]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'MemRead' is not permitted [D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v:43]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'MemWrite' is not permitted [D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v:44]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Branch' is not permitted [D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v:45]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'AluOp' is not permitted [D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v:46]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'Jump' is not permitted [D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v:47]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Ctr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Ctr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Ctr_tb_behav xil_defaultlib.Ctr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Ctr
+Compiling module xil_defaultlib.Ctr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Ctr_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim/xsim.dir/Ctr_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May  8 09:39:04 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Ctr_tb_behav -key {Behavioral:sim_1:Functional:Ctr_tb} -tclbatch {Ctr_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source Ctr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Ctr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 848.383 ; gain = 15.316
+save_wave_config {D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg
+set_property xsim.view D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Ctr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Ctr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Ctr_tb_behav xil_defaultlib.Ctr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Ctr
+Compiling module xil_defaultlib.Ctr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Ctr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Ctr_tb_behav -key {Behavioral:sim_1:Functional:Ctr_tb} -tclbatch {Ctr_tb.tcl} -view {D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg
+source Ctr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Ctr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Ctr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Ctr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Ctr_tb_behav xil_defaultlib.Ctr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Ctr
+Compiling module xil_defaultlib.Ctr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Ctr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run all
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Ctr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Ctr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Ctr_tb_behav xil_defaultlib.Ctr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Ctr
+Compiling module xil_defaultlib.Ctr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Ctr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 859.641 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Ctr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Ctr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Ctr_tb_behav xil_defaultlib.Ctr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Ctr
+Compiling module xil_defaultlib.Ctr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Ctr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 871.352 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Ctr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Ctr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Ctr_tb_behav xil_defaultlib.Ctr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Ctr
+Compiling module xil_defaultlib.Ctr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Ctr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 09:58:49 2024...

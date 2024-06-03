@@ -1,0 +1,19 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.sim/sim_1/behav/xsim/glbl.v,1544155482,verilog,,,,glbl,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sim_1/new/CPU_tb.v,1711513548,verilog,,,,CPU_tb,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALU.v,1716342975,verilog,,D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/PCupdate.v,,ALU,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALUctr.v,1715741147,verilog,,D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/SignExt.v,,ALUctr,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/Ctr.v,1715739866,verilog,,D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALUctr.v,,Ctr,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/DataMemory.v,1716337539,verilog,,D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/Registers.v,,DataMemory,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/Registers.v,1711513474,verilog,,D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/Ctr.v,,Registers,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/SignExt.v,1651419486,verilog,,D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALU.v,,SignExt,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/Ext.v,1711514198,verilog,,D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/DataMemory.v,,Ext,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/PC.v,1715745159,verilog,,D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/Ext.v,,PC,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/PCupdate.v,1716342837,verilog,,D:/LAB/lab2/lab02/lab2_IP/lab2_IP/display.v,,PCupdate,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/TOP.v,1716347079,verilog,,D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/ZeroExt.v,,TOP,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/ZeroExt.v,1651419474,verilog,,D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v,,ZeroExt,,,,,,,,
+D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v,1715743488,verilog,,D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/PC.v,,instrMem,,,,,,,,
+,,,,D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sim_1/new/CPU_tb.v,,display,,,,,,,,

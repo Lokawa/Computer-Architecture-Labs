@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 29 10:18:05 2024
+# Process ID: 15924
+# Current directory: D:/LAB/LAB05-refer -simulation/LAB05-refer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22488 D:\LAB\LAB05-refer -simulation\LAB05-refer\LAB05-refer.xpr
+# Log file: D:/LAB/LAB05-refer -simulation/LAB05-refer/vivado.log
+# Journal file: D:/LAB/LAB05-refer -simulation/LAB05-refer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/LAB/LAB05-refer -simulation/LAB05-refer/LAB05-refer.xpr}
+launch_simulation
+open_wave_config {D:/LAB/LAB05-refer -simulation/LAB05-refer/LAB05-refer.srcs/sim_1/imports/lab05_refer/CPU_tb_behav.wcfg}
+source CPU_tb.tcl
+close_sim

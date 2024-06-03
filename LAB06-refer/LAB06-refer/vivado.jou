@@ -1,0 +1,128 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 29 08:07:25 2024
+# Process ID: 15996
+# Current directory: D:/LAB/LAB06-refer/LAB06-refer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23564 D:\LAB\LAB06-refer\LAB06-refer\LAB06-refer.xpr
+# Log file: D:/LAB/LAB06-refer/LAB06-refer/vivado.log
+# Journal file: D:/LAB/LAB06-refer/LAB06-refer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sim_1/imports/0014_hzx_lab06/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run all
+close_sim
+launch_simulation
+open_wave_config D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sim_1/imports/0014_hzx_lab06/CPU_tb_behav.wcfg
+source CPU_tb.tcl
+relaunch_sim
+relaunch_sim
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sim_1/imports/0014_hzx_lab06/CPU_tb_behav.wcfg}
+close_sim

@@ -1,0 +1,21 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.sim/sim_1/behav/xsim/glbl.v,1544155482,verilog,,,,glbl,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sim_1/imports/new/CPU_tb.v,1712106285,verilog,,,,CPU_tb,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/imports/new/ALU.v,1712106248,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/imports/new/ALUctr.v,,ALU,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/imports/new/ALUctr.v,1712106241,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/imports/new/Ctr.v,,ALUctr,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/imports/new/Ctr.v,1712106192,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/imports/new/DataMemory.v,,Ctr,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/imports/new/DataMemory.v,1716955232,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/new/Ext.v,,DataMemory,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/imports/new/Registers.v,1712106197,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/imports/new/SignExt.v,,Registers,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/imports/new/SignExt.v,1712106218,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/new/TOP.v,,SignExt,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/new/Ext.v,1712106202,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/new/PC.v,,Ext,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/new/PC.v,1712106174,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/new/PCupdate.v,,PC,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/new/PCupdate.v,1712106226,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/imports/new/Registers.v,,PCupdate,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/new/TOP.v,1712120424,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/new/ZeroExt.v,,TOP,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/new/ZeroExt.v,1712106207,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/new/execution.v,,ZeroExt,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/new/instrMem.v,1716948724,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sim_1/imports/new/CPU_tb.v,,instrMem,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/new/execution.v,1716954677,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/new/instrDecode.v,,execution,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/new/instrDecode.v,1716954750,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/new/instrFetch.v,,instrDecode,,,,,,,,
+D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/new/instrFetch.v,1716954984,verilog,,D:/LAB/LAB06-refer/LAB06-refer/LAB06-refer.srcs/sources_1/imports/sources_1/new/instrMem.v,,instrFetch,,,,,,,,

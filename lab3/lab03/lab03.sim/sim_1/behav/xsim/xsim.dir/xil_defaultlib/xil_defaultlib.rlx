@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v,1715140293,verilog,,,,ALUCtr_tb,,,,,,,,
+D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v,1715138004,verilog,,,,Alu_tb,,,,,,,,
+D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v,1715134152,verilog,,,,Ctr_tb,,,,,,,,
+D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v,1715136025,verilog,,D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v,,ALUCtr,,,,,,,,
+D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v,1715139290,verilog,,D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v,,Alu,,,,,,,,
+D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Ctr.v,1715134670,verilog,,D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v,,Ctr,,,,,,,,

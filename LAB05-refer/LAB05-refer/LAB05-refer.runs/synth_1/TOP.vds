@@ -1,0 +1,541 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 22 12:20:35 2024
+# Process ID: 27848
+# Current directory: D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.runs/synth_1
+# Command line: vivado.exe -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+# Log file: D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.runs/synth_1/TOP.vds
+# Journal file: D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP.tcl -notrace
+Command: synth_design -top TOP -part xc7k325tffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11952 
+WARNING: [Synth 8-2611] redeclaration of ansi port a is not allowed [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/TOP.v:48]
+WARNING: [Synth 8-2611] redeclaration of ansi port b is not allowed [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/TOP.v:49]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 385.625 ; gain = 114.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/TOP.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [D:/Software/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (1#1) [D:/Software/Vivado/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
+INFO: [Synth 8-6157] synthesizing module 'display' [D:/LAB/lab2/lab02/lab2_IP/lab2_IP/display.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'display' (2#1) [D:/LAB/lab2/lab02/lab2_IP/lab2_IP/display.v:2]
+WARNING: [Synth 8-350] instance 'DISPLAY' of module 'display' requires 14 connections, but only 12 given [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/TOP.v:52]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (3#1) [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'instrMem' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:3]
+WARNING: [Synth 8-2898] ignoring malformed $readmem task: invalid memory name [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:11]
+WARNING: [Synth 8-3848] Net instrMEM[0] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[64] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[63] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[62] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[61] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[60] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[59] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[58] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[57] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[56] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[55] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[54] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[53] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[52] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[51] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[50] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[49] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[48] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[47] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[46] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[45] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[44] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[43] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[42] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[41] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[40] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[39] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[38] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[37] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[36] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[35] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[34] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[33] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[32] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[31] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[30] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[29] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[28] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[27] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[26] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[25] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[24] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[23] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[22] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[21] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[20] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[19] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[18] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[17] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[16] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[15] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[14] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[13] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[12] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[11] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[10] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[9] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[8] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[7] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[6] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[5] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[4] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[3] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[2] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+WARNING: [Synth 8-3848] Net instrMEM[1] in module/entity instrMem does not have driver. [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'instrMem' (4#1) [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Ctr' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/Ctr.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Ctr' (5#1) [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/Ctr.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Registers' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/Registers.v:3]
+WARNING: [Synth 8-2898] ignoring malformed $readmem task: invalid memory name [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/Registers.v:16]
+WARNING: [Synth 8-567] referenced signal 'regFile' should be on the sensitivity list [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/Registers.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'Registers' (6#1) [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/Registers.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Ext' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/Ext.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ZeroExt' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/ZeroExt.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ZeroExt' (7#1) [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/ZeroExt.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SignExt' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/SignExt.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SignExt' (8#1) [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/SignExt.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Ext' (9#1) [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/Ext.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ALUctr' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALUctr.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALUctr.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'ALUctr' (10#1) [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALUctr.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALU.v:4]
+WARNING: [Synth 8-567] referenced signal 'shift' should be on the sensitivity list [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALU.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (11#1) [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALU.v:4]
+INFO: [Synth 8-6157] synthesizing module 'PCupdate' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/PCupdate.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PCupdate' (12#1) [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/PCupdate.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/DataMemory.v:4]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'Data.txt'; please make sure the file is added to project and has read permission, ignoring [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/DataMemory.v:16]
+WARNING: [Synth 8-567] referenced signal 'memWrite' should be on the sensitivity list [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/DataMemory.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (13#1) [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/DataMemory.v:4]
+WARNING: [Synth 8-350] instance 'DMEM' of module 'DataMemory' requires 7 connections, but only 6 given [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/TOP.v:183]
+INFO: [Synth 8-6155] done synthesizing module 'TOP' (14#1) [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/TOP.v:3]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 423.504 ; gain = 152.211
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 423.504 ; gain = 152.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 423.504 ; gain = 152.211
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/constrs_1/new/lab05_xdc.xdc]
+Finished Parsing XDC File [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/constrs_1/new/lab05_xdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/constrs_1/new/lab05_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.605 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 820.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 820.605 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 820.605 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "call" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ALUsrc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "MemToReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "regWrite" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "memWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "Extop" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ALUop" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "Jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regFile_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'ALUctrOut_reg' [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALUctr.v:11]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input      5 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 35    
+	  16 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 2     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module instrMem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Ctr 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 9     
+Module Registers 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module Ext 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALUctr 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+	   9 Input      1 Bit        Muxes := 1     
+Module PCupdate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "CU/ALUop" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "ALU0/zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[31]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[30]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[29]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[28]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[27]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[26]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[25]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[24]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[23]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[22]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[21]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[20]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[19]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[18]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[17]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[16]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[15]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[14]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[13]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[12]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[11]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[10]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[9]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[1]
+WARNING: [Synth 8-3331] design instrMem has unconnected port readAddr[0]
+WARNING: [Synth 8-3332] Sequential element (ALUCU/ALUctrOut_reg[3]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (ALUCU/ALUctrOut_reg[2]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (ALUCU/ALUctrOut_reg[1]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (ALUCU/ALUctrOut_reg[0]) is unused and will be removed from module TOP.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |display       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |display |     1|
+|2     |BUFG    |     1|
+|3     |CARRY4  |     2|
+|4     |LUT1    |     8|
+|5     |LUT2    |     5|
+|6     |LUT3    |     1|
+|7     |LUT4    |     3|
+|8     |LUT6    |    10|
+|9     |FDRE    |     2|
+|10    |IBUF    |     8|
+|11    |IBUFGDS |     1|
+|12    |OBUF    |     6|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    55|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 820.605 ; gain = 549.312
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 820.605 ; gain = 152.211
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 820.605 ; gain = 549.312
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [D:/LAB/lab2/lab02/lab2_IP/lab2_IP/display.edif]
+Finished Parsing EDIF File [D:/LAB/lab2/lab02/lab2_IP/lab2_IP/display.edif]
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'DISPLAY/led_clk' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'DISPLAY/led_do' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'DISPLAY/seg_clk' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'DISPLAY/seg_do' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 848.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+89 Infos, 109 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 848.391 ; gain = 590.121
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 848.391 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.runs/synth_1/TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 22 12:20:55 2024...

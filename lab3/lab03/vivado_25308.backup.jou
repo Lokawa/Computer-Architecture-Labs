@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  8 08:52:32 2024
+# Process ID: 25308
+# Current directory: D:/LAB/lab3/lab03
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20316 D:\LAB\lab3\lab03\lab03.xpr
+# Log file: D:/LAB/lab3/lab03/vivado.log
+# Journal file: D:/LAB/lab3/lab03\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LAB/lab3/lab03/lab03.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir D:/LAB/lab3/lab03/lab03.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v w ]
+add_files -fileset sim_1 D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Ctr_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+source Ctr_tb.tcl
+save_wave_config {D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg
+set_property xsim.view D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg
+source Ctr_tb.tcl
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

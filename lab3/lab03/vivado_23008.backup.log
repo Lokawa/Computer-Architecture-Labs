@@ -1,0 +1,1040 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  8 10:51:20 2024
+# Process ID: 23008
+# Current directory: D:/LAB/lab3/lab03
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11928 D:\LAB\lab3\lab03\lab03.xpr
+# Log file: D:/LAB/lab3/lab03/vivado.log
+# Journal file: D:/LAB/lab3/lab03\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LAB/lab3/lab03/lab03.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Software/Vivado/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUCtr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUCtr_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUCtr_tb_behav xil_defaultlib.ALUCtr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALUCtr_tb_behav -key {Behavioral:sim_1:Functional:ALUCtr_tb} -tclbatch {ALUCtr_tb.tcl} -view {D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg
+WARNING: Simulation object /Ctr_tb/OpCode was not found in the design.
+WARNING: Simulation object /Ctr_tb/RegDst was not found in the design.
+WARNING: Simulation object /Ctr_tb/AluSrc was not found in the design.
+WARNING: Simulation object /Ctr_tb/MemToReg was not found in the design.
+WARNING: Simulation object /Ctr_tb/RegWrite was not found in the design.
+WARNING: Simulation object /Ctr_tb/MemRead was not found in the design.
+WARNING: Simulation object /Ctr_tb/MemWrite was not found in the design.
+WARNING: Simulation object /Ctr_tb/Branch was not found in the design.
+WARNING: Simulation object /Ctr_tb/AluOp was not found in the design.
+WARNING: Simulation object /Ctr_tb/Jump was not found in the design.
+source ALUCtr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALUCtr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/ALUCtr_tb/ALUOp}} 
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/ALUCtr_tb/Funct}} 
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/ALUCtr_tb/ALUCtrOut}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUCtr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUCtr_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUCtr_tb_behav xil_defaultlib.ALUCtr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUCtr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUCtr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ALUCtrOut' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUCtr_tb_behav xil_defaultlib.ALUCtr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUCtr
+Compiling module xil_defaultlib.ALUCtr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALUCtr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 825.059 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUCtr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUCtr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ALUCtrOut' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUCtr_tb_behav xil_defaultlib.ALUCtr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUCtr
+Compiling module xil_defaultlib.ALUCtr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALUCtr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 825.059 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUCtr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUCtr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ALUCtrOut' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUCtr_tb_behav xil_defaultlib.ALUCtr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUCtr
+Compiling module xil_defaultlib.ALUCtr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALUCtr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 825.059 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUCtr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUCtr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ALUCtrOut' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUCtr_tb_behav xil_defaultlib.ALUCtr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUCtr
+Compiling module xil_defaultlib.ALUCtr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALUCtr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 825.059 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUCtr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUCtr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ALUCtrOut' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUCtr_tb_behav xil_defaultlib.ALUCtr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUCtr
+Compiling module xil_defaultlib.ALUCtr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALUCtr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 825.059 ; gain = 0.000
+close [ open D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v w ]
+add_files D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v
+update_compile_order -fileset sources_1
+set_property top Alu [current_fileset]
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v w ]
+add_files -fileset sim_1 D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v
+update_compile_order -fileset sim_1
+set_property top Alu_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'zero' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:31]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluRes' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_tb
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v:45]
+WARNING: [VRFC 10-986] literal value truncated to fit in 8 bits [D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v:46]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Alu
+Compiling module xil_defaultlib.Alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Alu_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim/xsim.dir/Alu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May  8 11:13:44 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Alu_tb_behav -key {Behavioral:sim_1:Functional:Alu_tb} -tclbatch {Alu_tb.tcl} -view {D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg
+WARNING: Simulation object /Ctr_tb/OpCode was not found in the design.
+WARNING: Simulation object /Ctr_tb/RegDst was not found in the design.
+WARNING: Simulation object /Ctr_tb/AluSrc was not found in the design.
+WARNING: Simulation object /Ctr_tb/MemToReg was not found in the design.
+WARNING: Simulation object /Ctr_tb/RegWrite was not found in the design.
+WARNING: Simulation object /Ctr_tb/MemRead was not found in the design.
+WARNING: Simulation object /Ctr_tb/MemWrite was not found in the design.
+WARNING: Simulation object /Ctr_tb/Branch was not found in the design.
+WARNING: Simulation object /Ctr_tb/AluOp was not found in the design.
+WARNING: Simulation object /Ctr_tb/Jump was not found in the design.
+source Alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 847.039 ; gain = 0.000
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/Alu_tb/input1}} 
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/Alu_tb/input2}} 
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/Alu_tb/aluCtr}} 
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/Alu_tb/aluRes}} 
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/Alu_tb/zero}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Alu_tb_behav -key {Behavioral:sim_1:Functional:Alu_tb} -tclbatch {Alu_tb.tcl} -view {D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg
+WARNING: Simulation object /Ctr_tb/OpCode was not found in the design.
+WARNING: Simulation object /Ctr_tb/RegDst was not found in the design.
+WARNING: Simulation object /Ctr_tb/AluSrc was not found in the design.
+WARNING: Simulation object /Ctr_tb/MemToReg was not found in the design.
+WARNING: Simulation object /Ctr_tb/RegWrite was not found in the design.
+WARNING: Simulation object /Ctr_tb/MemRead was not found in the design.
+WARNING: Simulation object /Ctr_tb/MemWrite was not found in the design.
+WARNING: Simulation object /Ctr_tb/Branch was not found in the design.
+WARNING: Simulation object /Ctr_tb/AluOp was not found in the design.
+WARNING: Simulation object /Ctr_tb/Jump was not found in the design.
+source Alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/Alu_tb/input1}} 
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/Alu_tb/input2}} 
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/Alu_tb/aluCtr}} 
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/Alu_tb/aluRes}} 
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/Alu_tb/zero}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'zero' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:31]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluRes' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Alu
+Compiling module xil_defaultlib.Alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'zero' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:31]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluRes' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Alu
+Compiling module xil_defaultlib.Alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 890.059 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'zero' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:31]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluRes' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Alu
+Compiling module xil_defaultlib.Alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 894.027 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'zero' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:31]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluRes' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Alu
+Compiling module xil_defaultlib.Alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 894.027 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'zero' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:31]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluRes' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Alu
+Compiling module xil_defaultlib.Alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 894.027 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'zero' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:31]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluRes' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Alu
+Compiling module xil_defaultlib.Alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 894.027 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'zero' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:31]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluRes' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Alu
+Compiling module xil_defaultlib.Alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 894.027 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'zero' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:31]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluRes' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Alu
+Compiling module xil_defaultlib.Alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 894.875 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'zero' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:31]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluRes' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Alu
+Compiling module xil_defaultlib.Alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 894.875 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Alu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'zero' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:31]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'aluRes' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/Alu.v:32]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/Alu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Alu_tb_behav xil_defaultlib.Alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Alu
+Compiling module xil_defaultlib.Alu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 894.875 ; gain = 0.000
+run 10 ns
+run 90 ns
+save_wave_config {D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg}
+set_property top ALUCtr_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top ALUCtr [current_fileset]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUCtr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUCtr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ALUCtrOut' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUCtr_tb_behav xil_defaultlib.ALUCtr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUCtr
+Compiling module xil_defaultlib.ALUCtr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALUCtr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALUCtr_tb_behav -key {Behavioral:sim_1:Functional:ALUCtr_tb} -tclbatch {ALUCtr_tb.tcl} -view {D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg
+WARNING: Simulation object /Alu_tb/aluCtr was not found in the design.
+WARNING: Simulation object /Alu_tb/input1 was not found in the design.
+WARNING: Simulation object /Alu_tb/input2 was not found in the design.
+WARNING: Simulation object /Alu_tb/aluRes was not found in the design.
+WARNING: Simulation object /Alu_tb/zero was not found in the design.
+source ALUCtr_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALUCtr_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/ALUCtr_tb/ALUOp}} 
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/ALUCtr_tb/Funct}} 
+current_wave_config {Ctr_tb_behav.wcfg}
+Ctr_tb_behav.wcfg
+add_wave {{/ALUCtr_tb/ALUCtrOut}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUCtr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUCtr_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUCtr_tb_behav xil_defaultlib.ALUCtr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+add_bp {D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v} 43
+remove_bps -file {D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v} -line 43
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUCtr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUCtr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ALUCtrOut' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUCtr_tb_behav xil_defaultlib.ALUCtr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUCtr
+Compiling module xil_defaultlib.ALUCtr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALUCtr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUCtr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUCtr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ALUCtrOut' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUCtr_tb_behav xil_defaultlib.ALUCtr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUCtr
+Compiling module xil_defaultlib.ALUCtr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALUCtr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 894.875 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALUCtr_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALUCtr_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ALUCtrOut' is not allowed [D:/LAB/lab3/lab03/lab03.srcs/sources_1/new/ALUCtr.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab3/lab03/lab03.srcs/sim_1/new/ALUCtr_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtr_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/LAB/lab3/lab03/lab03.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2e678429bda346a38e37d89bb205de43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALUCtr_tb_behav xil_defaultlib.ALUCtr_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALUCtr
+Compiling module xil_defaultlib.ALUCtr_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALUCtr_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 894.875 ; gain = 0.000
+save_wave_config {D:/LAB/lab3/lab03/Ctr_tb_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 11:53:43 2024...

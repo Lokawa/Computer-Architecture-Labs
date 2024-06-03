@@ -1,0 +1,30 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'a' is not allowed [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/TOP.v:47]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'b' is not allowed [D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/TOP.v:48]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/ZeroExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ZeroExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/instrMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instrMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/Ext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ext
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/Ctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALUctr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUctr
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/SignExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sources_1/new/PCupdate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCupdate
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/lab2/lab02/lab2_IP/lab2_IP/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/LAB/LAB05-refer/LAB05-refer/LAB05-refer.srcs/sim_1/new/CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU_tb

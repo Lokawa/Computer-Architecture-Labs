@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  8 08:23:38 2024
+# Process ID: 9912
+# Current directory: D:/LAB/lab2/lab02
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16648 D:\LAB\lab2\lab02\lab02.xpr
+# Log file: D:/LAB/lab2/lab02/vivado.log
+# Journal file: D:/LAB/lab2/lab02\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/LAB/lab2/lab02/lab02.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
