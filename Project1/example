@@ -1,0 +1,18 @@
+# file: example.asm
+
+.data
+string1: .asciiz "Student ID: 522031910547\n"
+string2: .asciiz "Name: Fanyue Zhu\n"
+.text	
+main:
+
+li $v0, 4
+la $a0, string1
+syscall
+
+li $v0,4
+la $a0, string2
+syscall
+
+li $v0,10
+syscall
